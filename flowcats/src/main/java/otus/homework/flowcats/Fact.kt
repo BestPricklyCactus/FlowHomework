@@ -3,7 +3,7 @@ package otus.homework.flowcats
 import com.google.gson.annotations.SerializedName
 
 data class Fact(
-	@field:SerializedName("createdAt")
+	/*@field:SerializedName("createdAt")
 	val createdAt: String,
 	@field:SerializedName("deleted")
 	val deleted: Boolean,
@@ -20,5 +20,9 @@ data class Fact(
 	@field:SerializedName("user")
 	val user: String,
 	@field:SerializedName("updatedAt")
-	val updatedAt: String
+	val updatedAt: String*/
+	@field:SerializedName("fact")
+	val fact: String,
+	@field:SerializedName("length")
+	val length: Int
 )
