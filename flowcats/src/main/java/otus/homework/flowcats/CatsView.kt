@@ -19,13 +19,8 @@ class CatsView @JvmOverloads constructor(
                     findViewById<TextView>(R.id.fact_textView).text = result.data.fact
                 }
             }
-
             is Result.Error -> {
                 Toast.makeText(context, result.msg, Toast.LENGTH_SHORT).show()
-            }
-
-            else -> {
-                //DO nothing
             }
         }
     }
